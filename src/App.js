@@ -2,7 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 import Container from '@mui/material/Container';
 import Header from './components/Header';
-import Tags from './components/tags'
+import Tags from './components/tags';
+import Rating from './components/Rating'
 import data from './SubscribeDB';
 import React,{useState} from 'react';
 
@@ -16,7 +17,8 @@ function App() {
   return (
     <Container maxWidth="sm">
       <Header lang={lang} changeLang={changeLang}></Header>
-      <Tags data={data} lang={lang}></Tags>
+      <Tags data={data.tags} lang={lang}></Tags>
+      <Rating name="카이마루" distance="100m" totalStar={1} tasteStar={1} priceStar={1} ></Rating>
       <div style={{width:"100%", height:"100vh", backgroundColor:"red"}}>
         {JSON.stringify(data.tags)}
       </div>
