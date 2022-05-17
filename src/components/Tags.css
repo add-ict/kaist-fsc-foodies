@@ -1,0 +1,12 @@
+#Tags-outer {
+  height: 32px;
+  margin: 0.5em 0;
+  overflow: hidden;
+}
+#Tags-inner {
+  height: 48px;
+  white-space:nowrap;
+  overflow-x: scroll;
+  overflow-y: hide;
+-webkit-overflow-scrolling:touch;
+}

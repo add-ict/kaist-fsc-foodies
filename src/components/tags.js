@@ -1,6 +1,7 @@
 import * as React from 'react';
 import Chip from '@mui/material/Chip';
 import Stack from '@mui/material/Stack';
+import "./Tags.css"
 
 export default function Tags({lang, data}) {
   const handleClick = () => {
@@ -8,8 +9,10 @@ export default function Tags({lang, data}) {
   };
 
   return (
-    <Stack direction="row" spacing={1}>
-        {data?.tags?.map(x=>{return <Chip label={x.name[lang]} onClick={handleClick}></Chip>;})}
-    </Stack>
+    <div id="Tags-outer">
+      <Stack id="Tags-inner" direction="row" spacing={1}>
+          {data?.tags?.map(x=>{return <Chip label={x.name[lang]} onClick={handleClick}></Chip>;})}
+      </Stack>
+    </div>
   );
 }
