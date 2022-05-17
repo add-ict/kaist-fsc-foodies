@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Container from '@mui/material/Container';
 import Header from './components/Header';
+import Tags from './components/tags'
 import data from './SubscribeDB';
 import React,{useState} from 'react';
 
@@ -15,6 +16,7 @@ function App() {
   return (
     <Container maxWidth="sm">
       <Header lang={lang} changeLang={changeLang}></Header>
+      <Tags data={data} lang={lang}></Tags>
       <div style={{width:"100%", height:"100vh", backgroundColor:"red"}}>
         {JSON.stringify(data.tags)}
       </div>
