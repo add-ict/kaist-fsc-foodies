@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Container from '@mui/material/Container';
 import Header from './components/Header';
-import Tags from './components/tags';
+import Tags from './components/Tags';
 import Rating from './components/Rating'
 import data from './SubscribeDB';
 import React,{useState} from 'react';
