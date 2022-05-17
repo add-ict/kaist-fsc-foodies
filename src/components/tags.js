@@ -11,7 +11,7 @@ export default function Tags({lang, data}) {
   return (
     <div id="Tags-outer">
       <Stack id="Tags-inner" direction="row" spacing={1}>
-          {data?.tags?.map(x=>{return <Chip label={x.name[lang]} onClick={handleClick}></Chip>;})}
+          {data.map(x=>{return <Chip label={x.name[lang]} onClick={handleClick}></Chip>;})}
       </Stack>
     </div>
   );
