@@ -6,8 +6,8 @@ function getColorCode(star)
 {
     if(star<=1)
         return "#f00";
-    if(star<=3)
-        return "#ff0";
+    else if(star<=3)
+        return "#ff7f00";
     return "#008000";
 }
 
@@ -27,11 +27,11 @@ export default function Rating({name, distance, totalStar, tasteStar, priceStar}
                     <div class="Rating--title">총점</div>
                     <div class="Rating--value">{totalStar}/5</div>
                 </div>
-                <div class="Rating--star" style={{color:getColorCode(totalStar)}}> {/*맛*/}
+                <div class="Rating--star" style={{color:getColorCode(tasteStar)}}> {/*맛*/}
                     <div class="Rating--title">맛</div>
                     <div class="Rating--value">{tasteStar}/5</div>
                 </div>
-                <div class="Rating--star" style={{color:getColorCode(totalStar)}}> {/*가격*/}
+                <div class="Rating--star" style={{color:getColorCode(priceStar)}}> {/*가격*/}
                     <div class="Rating--title">가격</div>
                     <div class="Rating--value">{priceStar}/5</div>
                 </div>
