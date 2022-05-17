@@ -45,4 +45,5 @@ for (let i = 0; i < 10; i++) {
         tags: Array(tagEn.length).fill(0).map((_, i) => i).filter(x => Math.random() < 0.3)
     });
 }
-export default const data = { tags, stores };
+const data = { tags, stores };
+export default data;
