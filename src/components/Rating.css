@@ -1,0 +1,36 @@
+#Rating--wrapper{
+
+}
+
+#Rating--upper {
+    display : flex;
+    justify-content: space-around;
+}
+
+#Rating--name{
+    font-size:1.5em;
+}
+
+#Rating--distance{
+
+}
+
+#Rating--lower{
+    display : flex;
+    font-size: 1em;
+    justify-content: space-around;
+}
+
+.Rating--star{
+    flex: 1;
+    text-align: center;
+}
+
+.Rating--title{
+    font-size:1.2em;
+}
+
+.Rating--value{
+    font-size:1em;
+    
+}
