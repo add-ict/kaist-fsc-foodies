@@ -1,0 +1,60 @@
+#Info--wrapper{
+
+}
+
+#Info--map{
+    width: 100vw;
+    height: 50vh;
+    background-color:"#f00" ;
+}
+
+#Info--upper {
+    display : flex;
+    justify-content: space-around;
+}
+
+#Info--name{
+    font-size:1.5em;
+    margin-right:auto;
+}
+
+#Info--review{
+    margin-right:0.5em;
+}
+
+#Info--navigate{
+    margin-right:0.5em;
+}
+
+#Info--middle{
+    display : flex;
+    font-size: 1em;
+    justify-content: space-around;
+}
+
+#Info--lower{
+
+}
+
+.Info--star{
+    flex: 1;
+    text-align: center;
+}
+
+.Info--title{
+    font-size:1.2em;
+}
+
+.Info--value{
+    font-size:1em;
+    
+}
+
+#Info--reviewtitle{
+    font-size:2em;
+}
+
+.Info--reviewcontent{
+    font-size: 1.3em;
+}
+
