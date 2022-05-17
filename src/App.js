@@ -18,7 +18,7 @@ function App() {
     <Container maxWidth="sm">
       <Header lang={lang} changeLang={changeLang}></Header>
       <Tags data={data.tags} lang={lang}></Tags>
-      <Rating name="카이마루" distance="100m" totalStar={1} tasteStar={1} priceStar={1} ></Rating>
+      <Rating name="카이마루" distance="100m" totalStar={1} tasteStar={3} priceStar={5} ></Rating>
       <div style={{width:"100%", height:"100vh", backgroundColor:"red"}}>
         {JSON.stringify(data.tags)}
       </div>
